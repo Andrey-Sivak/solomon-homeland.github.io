@@ -1,0 +1,102 @@
+body,
+p,
+ul, li,
+h1, h2, h3, h4, h5, h6,
+input,
+textarea,
+a {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	border: none;
+	text-decoration: none;
+}
+.popup-window-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: #f2f2f2;
+}
+.main {
+	position: relative;
+	/*width: 380px;*/
+	border: none;
+	/*margin: 10% auto;*/
+	/*min-height: 300px;*/
+	padding: 40px 90px;
+	background-color: #ffffff;
+}
+
+.main p{
+	text-align: center;
+}
+
+.main a{
+	color: #737573;
+	text-decoration: underline;
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+}
+
+.Hyper p{
+	margin: 10px 0;
+}
+
+h3{
+	text-align: center;
+	font-size: 21px;
+	font-family: Arial, sans-serif;
+}
+
+br{
+	margin: 2px 0;
+}
+
+#s1{
+	text-align: center;
+	color: #737573;
+	font-size: 13px; /* пиксели не указала */
+	margin: 25px auto;
+	font-family: Arial, sans-serif;
+	max-width: 190px;
+}
+
+#s2{
+	position: absolute;
+	left: 340px;
+	top: 20px;
+	cursor: pointer;
+}
+
+.mamarodna {
+	background-color: #f7f7f7;
+	border: none;
+	padding: 15px 0;
+	width: 220px;
+	text-align: center;
+}
+
+input:focus {
+	outline:none;
+}
+
+input:focus::-webkit-input-placeholder{
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.mamarodna2 {
+	margin-top: 10px;
+	background-color: white;
+	border: 2px solid black;
+	padding: 15px 0;
+	width: 220px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 12px;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
