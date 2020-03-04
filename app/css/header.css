@@ -72,6 +72,7 @@
 
 .first-section {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     color: #fff;
     padding-bottom: 136px;
