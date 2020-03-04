@@ -1,0 +1,42 @@
+.second-section-wrap {
+    padding: 100px 0 155px 0;
+    position: relative;
+}
+.second-section {
+    display: flex;
+}
+.second-section-wrap .navigate-dots {
+    padding-top: 30px;
+}
+.sec-s-content {
+    text-align: center;
+    max-width: 750px;
+    margin-left: 97px;
+}
+.sec-s_caption {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.sec-s_caption__company-name {
+    color: #e6b577;
+    display: block;
+}
+.sec-s_info-text {
+    font-size: 18px;
+    color: #adadad;
+    max-width: 556px;
+    margin: 0 auto 80px;
+}
+.sec-s .callback-buttons {
+    color: #403a3b;
+}
+.sec-s_bottom-block {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 1005px;
+    height: 45px;
+    background-color: #0a070a;
+}
+

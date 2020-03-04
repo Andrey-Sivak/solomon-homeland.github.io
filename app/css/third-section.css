@@ -1,0 +1,80 @@
+.third-section-wrap {
+    background-color: #0a070a;
+    padding: 102px 0 100px;
+}
+.third-section-wrap .navigate-dots {
+    padding-top: 20px;
+}
+.third-section {
+    display: flex;
+    position: relative;
+}
+.th-s_top-block {
+    position: absolute;
+    display: flex;
+    width: 265px;
+    box-sizing: border-box;
+    padding: 0 20px 30px 10px;
+    bottom: 100%;
+    right: 0;
+}
+.th-s_top-block__num {
+    color: #f7cda1;
+    font-size: 60px;
+    font-weight: 200;
+}
+.th-s_top-block__text {
+    max-width: 80px;
+    color: #afaeae;
+    margin-top: 10px;
+    margin-left: 14px;
+}
+.th-s_caption {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.th-s_caption-mark {
+    color: #ebc69f;
+    display: block;
+}
+.th-s_benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 0 -28px;
+}
+.benefit {
+    max-width: 320px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 34px 28px 15px;
+    color: #fff;
+    background-color: #0a070a;
+    transition: all ease .5s;
+}
+.benefit:hover {
+    background-color: #171717;
+}
+.benefit-help:hover {
+    background-color: #0a070a;
+}
+.benefit:hover .benefit_text,
+.benefit:hover .benefit_text-mark {
+    color: #f5cfa9;
+}
+.benefit_icon {
+    margin-bottom: 13px;
+}
+.benefit_text {
+    color: #aaa;
+    font-weight: 300;
+    line-height: 22px;
+    transition: inherit;
+}
+.benefit_text-mark {
+    font-weight: 500;
+    color: #fff;
+}
