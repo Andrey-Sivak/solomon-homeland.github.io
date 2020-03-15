@@ -60,6 +60,7 @@
     font-weight: 500;
 }
 .deal_more__text {
+    max-width: 515px;
     font-size: 16px;
     color: #7c7b7b;
     line-height: 22px;

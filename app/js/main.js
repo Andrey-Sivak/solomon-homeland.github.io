@@ -1,3 +1,5 @@
+import { Slider } from "./slider";
+
 window.addEventListener('load', function () {
 
     dealShowMore();
@@ -31,4 +33,15 @@ window.addEventListener('load', function () {
             })
         })
     }
+
+    const slider = new Slider({
+        wrap: '#slider',
+        autoplay: false,
+        dots: false,
+        nextArrow: '#next',
+        prevArrow: '#prev'
+    });
+
+    slider.init();
+
 });
