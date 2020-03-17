@@ -32,6 +32,8 @@
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: self-start;
 }
 .f-s-about-us_column:first-child {
     max-width: 460px;
@@ -302,11 +304,6 @@
     display: flex;
     margin-bottom: 50px;
 }
-/**/
-/*.deal_img-wrap {
-    padding-top: 50px;
-}*/
-/**/
 .deal_slider-wrap {
     padding-top: 50px;
     overflow: hidden;
@@ -339,8 +336,6 @@
     font-weight: 500;
 }
 
-
-
 .deal_img {
     width: 459px;
     height: auto;
@@ -360,7 +355,6 @@
     color: #7c7b7b;
     font-size: 16px;
     line-height: 22px;
-    margin-bottom: 17px;
 }
 .deal_location-caption {
     display: block;
@@ -374,7 +368,7 @@
     border-bottom: 1px solid #f0f0f0;
     padding: 14px 0;
     display: flex;
-    margin-bottom: 17px;
+    margin: 17px 0;
 }
 .deal_coast {
     line-height: 22px;

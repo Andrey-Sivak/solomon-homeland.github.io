@@ -18,11 +18,11 @@
     width: 100%;
     justify-content: space-around;
 }
-.header_menu__item-link {
+.header_menu__item > a {
     font-size: 14px;
     color: #fff;
 }
-.header_menu__item-link:hover,
+.header_menu__item > a:hover,
 .header_callback__number:hover {
     text-decoration: underline;
 }

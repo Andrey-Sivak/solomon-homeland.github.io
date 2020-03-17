@@ -67,12 +67,17 @@
     margin-bottom: 30px;
 }
 .deal_more__link {
+    display: block;
     color: #e6b678;
     font-weight: 600;
     font-size: 16px;
     padding-bottom: 3px;
     border-bottom: 1px solid #f0f0f0;
+    width: fit-content;
+}
+.deal_more__link:not(:last-of-type) {
+    margin-bottom: 5px;
 }
 .deal_more__link:hover {
-    border-bottom: none;
+    border-bottom: 1px solid;
 }

@@ -81,6 +81,7 @@
     line-height: 22px;
     font-weight: 500;
     font-size: 16px;
+    max-width: 310px;
 }
 .svn-s_israel__contacts-info--caption,
 .svn-s_israel__contacts-info--address,
@@ -88,7 +89,7 @@
     z-index: 1;
     position: relative;
 }
-.svn-s_israel__contacts-info--address:not(:last-child) {
+.svn-s_israel__contacts-info--address:first-of-type {
     margin-bottom: 27px;
 }
 .svn-s_usa {

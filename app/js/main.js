@@ -3,6 +3,7 @@ import { Slider } from "./slider";
 window.addEventListener('load', function () {
 
     dealShowMore();
+    sliders();
 
     function dealShowMore() {
         const dealsList = document.getElementsByClassName('deal');
@@ -34,14 +35,23 @@ window.addEventListener('load', function () {
         })
     }
 
-    const slider = new Slider({
-        wrap: '#slider',
-        autoplay: false,
-        dots: false,
-        nextArrow: '#next',
-        prevArrow: '#prev'
-    });
+    function sliders() {
+        const slidersWrap = document.getElementsByClassName('deal_slider-wrap');
+        for (let k = 0; k < slidersWrap.length; k++) {
 
-    slider.init();
+            const wrapName = `#slider${k + 1}`;
+            const prev = `#prev${k + 1}`;
+            const next = `#next${k + 1}`;
+
+            const slider = new Slider({
+                wrap: wrapName,
+                autoplay: false,
+                dots: false,
+                nextArrow: next,
+                prevArrow: prev
+            });
+            slider.init();
+        }
+    }
 
 });
