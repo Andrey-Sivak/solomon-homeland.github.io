@@ -1,4 +1,5 @@
 .six-section-wrap {
+    display: none;
     background-image: url("../img/index-six-bg.jpg");
     background-size: cover;
     background-position: top center;

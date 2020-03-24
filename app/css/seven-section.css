@@ -1,3 +1,7 @@
+.seven-section-wrap {
+    display: none;
+}
+
 .svn-s_israel {
     display: flex;
     justify-content: space-between;

@@ -1,4 +1,5 @@
 import { Slider } from "./slider";
+import { MobMenu } from './menu.js';
 
 window.addEventListener('load', function () {
 
@@ -53,5 +54,12 @@ window.addEventListener('load', function () {
             slider.init();
         }
     }
+
+    const mobMenu = new MobMenu({
+        btn: 'menu-burger',
+        menuContent: 'header_menu'
+    });
+
+    mobMenu.init();
 
 });

@@ -1,6 +1,7 @@
 .second-section-wrap {
     padding: 100px 0 155px 0;
     position: relative;
+    display: none;
 }
 .second-section {
     display: flex;

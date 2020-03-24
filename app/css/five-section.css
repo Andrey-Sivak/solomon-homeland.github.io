@@ -2,6 +2,7 @@
     background-image: url("../img/index-five-bg.jpg");
     background-size: cover;
     background-position: top center;
+    display: none;
 }
 .five-section-wrap .navigate-dots {
     margin-top: 116px;

@@ -1,6 +1,7 @@
 .third-section-wrap {
     background-color: #0a070a;
     padding: 102px 0 100px;
+    display: none;
 }
 .third-section-wrap .navigate-dots {
     padding-top: 20px;

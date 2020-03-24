@@ -5,6 +5,7 @@
     background-size: cover;
     background-position: top center;
     position: relative;
+    display: none;
 }
 .four-section {
     position: relative;
