@@ -5,7 +5,6 @@
     background-size: cover;
     background-position: top center;
     position: relative;
-    display: none;
 }
 .four-section {
     position: relative;
@@ -47,4 +46,34 @@
     right: calc((100vw - 1140px) / 2);
     background-position: bottom center;
     background-repeat: no-repeat;
+}
+@media(max-width: 1200px) {
+    .fr-s_family-img {
+        right: 0;
+    }
+}
+@media(max-width: 1024px) {
+    .fr-s_family-img {
+        width: 40vw;
+        background-size: contain;
+    }
+}
+@media(max-width: 768px) {
+    .fr-s_family-img,
+    .fr-s_bottom-block {
+        display: none;
+    }
+    .four-section-wrap {
+        padding: 30px 0;
+    }
+}
+@media(max-width: 430px) {
+    .fr-s_first-text,
+    .fr-s_second-text {
+        font-size: 20px;
+        text-align: center;
+    }
+    .fr-s_main-offer__btn {
+        margin: 0 auto;
+    }
 }

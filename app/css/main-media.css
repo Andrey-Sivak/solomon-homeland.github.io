@@ -5,7 +5,8 @@
 }
 @media(max-width: 1172px) {
     .container {
-        padding: 0 10px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .header_logo__img {
         width: 120px;
@@ -101,6 +102,11 @@
         stroke-dashoffset: -138px;
     }
 }
+@media(max-width: 700px) {
+    .container .navigate-dots {
+        display: none;
+    }
+}
 @media(max-width: 667px) {
     .header_callback {
         flex-direction: column;
@@ -113,6 +119,24 @@
     }
     .header_callback__btn {
         width: 100%;
+    }
+}
+@media(max-width: 600px) {
+    .callback-buttons_buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .callback-buttons_button {
+        width: 250px;
+    }
+    .callback-buttons_button:not(:last-child) {
+        margin-bottom: 25px;
+    }
+    .callback-buttons_top-info {
+        font-size: 14px;
+    }
+    .callback-buttons_bottom-info {
+        font-size: 16px;
     }
 }
 @media (max-width: 520px) {
@@ -135,6 +159,9 @@
     }
     .header_menu__item:not(:last-child) {
         border-bottom: 1px solid #fff;
+    }
+    .header {
+        margin-bottom: 20px;
     }
 }
 
@@ -174,5 +201,16 @@
     .footer-bottom_widget {
         max-width: 360px;
         width: 100%;
+    }
+}
+@media(max-width: 430px) {
+    .callback-buttons_top-info {
+        font-size: 12px;
+    }
+    .callback-buttons_bottom-info {
+        font-size: 14px;
+    }
+    .callback-buttons_button {
+        padding: 15px 0!important;
     }
 }

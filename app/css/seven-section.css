@@ -1,5 +1,5 @@
 .seven-section-wrap {
-    display: none;
+
 }
 
 .svn-s_israel {
@@ -105,4 +105,97 @@
     padding: 23px 0 16px;
     display: block;
     margin-top: 60px;
+}
+.svn-s_israel__contacts-wrap {
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+@media(max-width: 1172px) {
+    .svn-s_israel__contacts {
+        margin-left: 0;
+        padding-left: 15px;
+    }
+    .svn-s_israel__contacts {
+        width: 50%;
+        box-sizing: border-box;
+    }
+}
+@media(max-width: 950px) {
+    .svn-s_israel__contacts-caption {
+        margin-left: 0;
+        margin-bottom: 25px;
+    }
+    .svn-s_israel__contacts-info {
+        margin-bottom: 15px;
+    }
+    .svn-s_israel__contacts-info--email {
+        margin-bottom: 25px;
+    }
+    .svn-s_israel__contacts-info-wrap {
+        padding-left: 0;
+    }
+    .svn-s_usa-contacts-wrap {
+        padding-left: 50px;
+    }
+    .svn-s_israel__contacts-info--address {
+        font-size: 14px;
+    }
+    .svn-s_israel__contacts-info--caption {
+        font-size: 20px;
+    }
+    .svn-s_israel-map,
+    .svn-s_usa-map {
+        height: 450px;
+    }
+    .svn-s_israel__contacts {
+        padding-top: 35px;
+    }
+}
+@media(max-width: 700px) {
+    .svn-s_israel__contacts .navigate-dots {
+        display: none;
+    }
+    .svn-s_usa-contacts-wrap {
+        background-image: unset;
+    }
+}
+@media(max-width: 550px) {
+    .svn-s_israel,
+    .svn-s_usa {
+        flex-direction: column;
+    }
+    .svn-s_israel__contacts,
+    .svn-s_israel-map,
+    .svn-s_usa-map,
+    .svn-s_usa-contacts-wrap {
+        width: 100%;
+    }
+    .svn-s_israel-map,
+    .svn-s_usa-map {
+        height: 75vw;
+    }
+    .svn-s_usa-map {
+        order: 2;
+    }
+    .svn-s_israel__contacts {
+        margin-bottom: 20px;
+    }
+    .svn-s_usa-contacts-wrap {
+        margin-bottom: 20px;
+        padding-top: 35px;
+        padding-left: 15px;
+    }
+    .svn-s_israel__contacts-info--btn {
+        margin-top: 15px;
+    }
+}
+@media(max-width: 430px) {
+    .svn-s_israel__contacts-caption {
+        font-size: 20px;
+    }
+    .svn-s_israel__contacts-info--email,
+    .svn-s_israel__contacts-caption,
+    .svn-s_israel__contacts-info--caption {
+        margin-bottom: 13px;
+    }
 }
