@@ -1,10 +1,12 @@
 import { Slider } from "./slider";
 import { MobMenu } from './menu.js';
+import { Programs as InvestPrograms } from './mobile-ivest-programms.js';
 
 window.addEventListener('load', function () {
 
     dealShowMore();
     sliders();
+    investPrograms();
 
     function dealShowMore() {
         const dealsList = document.getElementsByClassName('deal');
@@ -55,6 +57,20 @@ window.addEventListener('load', function () {
         }
     }
 
+    function investPrograms() {
+        const wrap = document.getElementsByClassName('programs')[0];
+        if( !wrap ) {
+            return;
+        }
+
+        const programs = new InvestPrograms({
+            items: '.program',
+            className: 'program-active'
+        });
+
+        programs.init();
+    }
+
     const mobMenu = new MobMenu({
         btn: 'menu-burger',
         menuContent: 'header_menu'
@@ -62,4 +78,4 @@ window.addEventListener('load', function () {
 
     mobMenu.init();
 
-});
+ });
