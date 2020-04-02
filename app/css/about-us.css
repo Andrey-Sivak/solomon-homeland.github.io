@@ -51,6 +51,77 @@
     color: #e2bf99;
 }
 
+@media(max-width: 1075px) {
+    .f-s-about-us_column:first-child {
+        max-width: 350px;
+    }
+}
+@media(max-width: 1020px) {
+    .f-s-about-us {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 230px;
+    }
+    .f-s-about-us .f-s-about-us_column {
+        max-width: 300px;
+    }
+    .about-us .f-s_main-offer {
+        max-width: 90%;
+    }
+}
+@media(max-width: 950px) {
+    .about-us .f-s_bottom-note {
+        max-width: 360px;
+    }
+}
+@media(max-width: 760px) {
+    .about-us .f-s_bottom-note {
+        display: none;
+    }
+    .about-us .first-section {
+        flex-wrap: wrap;
+    }
+    .about-us .header {
+        margin-bottom: 0;
+    }
+    .about-us .f-s_main-offer {
+        max-width: 85%;
+        margin-bottom: 45px;
+    }
+    .f-s_main-offer__mark-caption {
+        margin: 15px 0;
+    }
+    .f-s-about-us {
+        padding: 25px 15px;
+        background-image: unset;
+        text-align: center;
+    }
+    .f-s-about-us .f-s-about-us_column {
+        max-width: unset;
+    }
+    .f-s-about-us_item {
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 430px) {
+    .f-s_main-offer__mark-caption {
+        font-size: 20px;
+    }
+    .f-s_main-offer__text,
+    .benefit_text {
+        font-size: 13px;
+    }
+}
+@media(max-width: 375px) {
+    .about-us .f-s_main-offer {
+        max-width: 80%;
+    }
+    .benefit_text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
 /* second section */
 
 .about-us-sec-s {
@@ -89,6 +160,41 @@
     font-size: 19px;
     font-weight: 600;
     margin-bottom: 70px;
+}
+@media(max-width: 768px) {
+    .about-us-sec-s_caption {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    .about-us-sec-s_text {
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+    .about-us-sec-s_note {
+        margin-bottom: 25px;
+    }
+    .about-us-sec-s {
+        padding-top: 50px;
+        padding-bottom: 65px;
+    }
+}
+@media(max-width: 430px) {
+    .about-us-sec-s_caption {
+        font-size: 16px;
+    }
+    .about-us-sec-s_bottom-block {
+        display: none;
+    }
+    .about-us-sec-s {
+        padding-bottom: 35px;
+    }
+    .about-us-sec-s_text {
+        font-size: 12px;
+    }
+    .about-us-sec-s_note {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
 }
 
 /* third section */
@@ -244,6 +350,86 @@
 .about-us-third-s_content .callback-buttons {
     color: #fff;
 }
+@media(max-width: 1024px) {
+    .about-us-third-s_caption {
+        max-width: 945px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+    }
+}
+@media(max-width: 1020px) {
+    .about-us-third-s_top-sale {
+        display: none;
+    }
+    .about-us-third-s_benefit {
+        padding-left: 20px;
+    }
+    .about-us-third-s_total-income {
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+    .about-us-third-s_alternative__caption,
+    .about-us-third-s_alternative__text,
+    .about-us-third-s_alternative__note {
+        padding-left: 0;
+    }
+    .about-us-third-s_alternative__caption {
+        font-size: 20px;
+        line-height: 21px;
+    }
+}
+@media(max-width: 430px) {
+    .about-us-third-s_caption,
+    .about-us-third-s_total-income__caption {
+        font-size: 20px;
+    }
+    .about-us-third-s_img-block {
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    .about-us-third-s_text,
+    .about-us-third-s_total-income__text,
+    .about-us-third-s_benefit__text,
+    .about-us-third-s_alternative__text {
+        font-size: 13px;
+    }
+    .about-us-third-s_bold-text {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .about-us-third-s_benefit__num {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+    .about-us-third-s_benefits,
+    .about-us-third-s_alternatives {
+        flex-wrap: wrap;
+    }
+    .about-us-third-s_benefit,
+    .about-us-third-s_alternative {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+    .about-us-third-s_alternative {
+        margin-bottom: 20px;
+    }
+    .about-us-third-s_alternatives {
+        margin-bottom: 20px;
+    }
+    .about-us-third-s_total-income {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .about-us-third-s_bottom-block {
+        display: none;
+    }
+    .about-us-third-s-wrap {
+        padding-bottom: 30px;
+        background-image: unset;
+    }
+}
 
 /* about-us-stats-data */
 
@@ -262,12 +448,14 @@
 .about-us-stats-data {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .about-us-stats-data_item__num {
     font-size: 60px;
     font-weight: bold;
     color: #e6b678;
     margin-bottom: 15px;
+    white-space: nowrap;
 }
 .about-us-stats-data_bottom-block {
     position: absolute;
@@ -277,12 +465,54 @@
     background-color: #f8f8f8;
     height: 25px;
 }
+@media(max-width: 1020px) {
+    .about-us-stats-data_item {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .about-us-stats-data-wrap {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        background-image: unset;
+    }
+    .about-us-stats-data_bottom-block {
+        display: none;
+    }
+}
+@media(max-width: 768px) {
+    .about-us-stats-data_item__num {
+        font-size: 45px;
+    }
+}
+@media(max-width: 430px) {
+    .about-us-stats-data_item__num {
+        font-size: 35px;
+        margin-bottom: 0;
+    }
+    .about-us-stats-data_item__text {
+        font-size: 14px;
+    }
+}
+@media(max-width: 375px) {
+    .about-us-stats-data_item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .about-us-stats-data_item__num {
+        font-size: 50px;
+    }
+    .about-us-stats-data_item__text {
+        max-width: 65%;
+        margin: 0 auto;
+    }
+}
 
 /* about-us-last-deals */
 
 .about-us-last-deals-wrap {
     padding: 115px 0;
     background-color: #f8f8f8;
+    display: none;
 }
 .about-us-last-deals_caption {
     color: #1e1e1e;
