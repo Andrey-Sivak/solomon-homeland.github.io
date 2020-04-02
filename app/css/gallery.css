@@ -81,3 +81,112 @@
 .deal_more__link:hover {
     border-bottom: 1px solid;
 }
+
+@media(max-width: 1170px) {
+    .deal_info {
+        padding: 60px 25px;
+    }
+}
+@media(max-width: 1020px) {
+    .deal_img {
+        width: 350px;
+    }
+    .deal_slider-wrap {
+        max-width: 350px;
+    }
+    .deal_caption,
+    .deal_more__caption {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .deal_location,
+    .deal_more__text,
+    .deal_more__link,
+    .deal_all-income {
+        font-size: 14px;
+    }
+    .deal_coast-info {
+        flex-wrap: wrap;
+    }
+    .deal_all-income {
+        margin: 15px 0;
+    }
+    .deal_more-active {
+        margin-top: 15px;
+    }
+    .gallery .header {
+        margin-bottom: 10px;
+    }
+}
+@media(max-width: 700px) {
+    .gallery-header_bottom-block {
+        display: none;
+    }
+    .about-us-last-deals-wrap {
+        padding-bottom: 35px;
+    }
+    .deal {
+        flex-direction: column;
+    }
+    .deal_img {
+        width: 80%;
+    }
+    .deal_slider-wrap {
+        max-width: 90vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .deal_slider-arrows {
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        justify-content: space-between;
+        max-width: unset;
+    }
+    .deal_slider-arr {
+        box-sizing: border-box;
+        padding: 50px 20px;
+    }
+}
+@media(max-width: 640px) {
+    .gallery .f-s_main-offer__caption {
+        font-size: 35px;
+    }
+    .gallery .first-section {
+        padding-left: 15px;
+    }
+}
+@media(max-width: 425px) {
+    .deal_slider-wrap {
+        max-width: 100%;
+    }
+    .deal_img {
+        width: 100%;
+    }
+    .deal_slider-arr {
+        padding: 10px 15px;
+        border-radius: 50%;
+        background-color: rgba(255,255,255,.7);
+    }
+    .deal_slider-arrows {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .deal_info {
+        padding: 25px 0;
+        background-color: unset;
+        border-bottom: 1px solid #000;
+    }
+    .deal_caption,
+    .deal_more__caption {
+        font-size: 18px;
+    }
+    .deal_location,
+    .deal_more__text,
+    .deal_more__link,
+    .deal_all-income {
+        font-size: 12px;
+    }
+}
