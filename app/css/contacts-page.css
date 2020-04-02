@@ -12,3 +12,17 @@
     bottom: 0;
     left: 0;
 }
+@media(max-width: 640px) {
+    .contacts-page .f-s_main-offer__caption {
+        font-size: 35px;
+    }
+    .header-bottom-block {
+        display: none;
+    }
+    .contacts-page .first-section {
+        padding-bottom: 15px;
+    }
+    .contacts-page .header {
+        margin-bottom: 15px;
+    }
+}
