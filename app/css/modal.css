@@ -21,7 +21,7 @@
     left: 0;
     right: 0;
     background-color: rgba(0,0,0,0);
-    transition: all .35s ease-in;
+    transition: background-color .35s ease-in;
 }
 .modal-window {
     position: relative;
@@ -37,7 +37,7 @@
     background-color: #fff;
     box-sizing: border-box;
     transform: translateY(-450px);
-    transition: all .35s ease-in;
+    transition: transform .35s ease-in;
 }
 .modal.modal-hide,
 .modal.modal-hide .modal-window {
