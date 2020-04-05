@@ -1,12 +1,26 @@
 import { Slider } from "./slider";
 import { MobMenu } from './menu.js';
 import { Programs as InvestPrograms } from './mobile-ivest-programms.js';
+import { Modal } from "./modal";
 
 window.addEventListener('load', function () {
 
     dealShowMore();
     sliders();
     investPrograms();
+    modalWindow();
+
+    function modalWindow() {
+        const modal = new Modal();
+        const buttons = document.getElementsByClassName('button');
+        const buttonsArray = Array.prototype.slice.call( buttons );
+        for( const btn of buttonsArray ) {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                modal.init();
+            });
+        }
+    }
 
     function dealShowMore() {
         const dealsList = document.getElementsByClassName('deal');
