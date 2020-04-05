@@ -5,12 +5,19 @@ import { Modal } from "./modal";
 
 window.addEventListener('load', function () {
 
-    dealShowMore();
-    sliders();
-    investPrograms();
-    modalWindow();
+    /* mobile menu */
+    (function () {
 
-    function modalWindow() {
+        const mobMenu = new MobMenu({
+            btn: 'menu-burger',
+            menuContent: 'header_menu'
+        });
+
+        mobMenu.init();
+    })();
+
+    /* modal window */
+    (function () {
         const modal = new Modal();
         const buttons = document.getElementsByClassName('button');
         const buttonsArray = Array.prototype.slice.call( buttons );
@@ -20,9 +27,11 @@ window.addEventListener('load', function () {
                 modal.init();
             });
         }
-    }
+    })();
 
-    function dealShowMore() {
+    /* gallery page show more info about deal */
+    (function () {
+
         const dealsList = document.getElementsByClassName('deal');
         if( !dealsList[0] ) {
             return;
@@ -50,9 +59,10 @@ window.addEventListener('load', function () {
                 }
             })
         })
-    }
+    })();
 
-    function sliders() {
+    /* house sliders */
+    (function () {
         const slidersWrap = document.getElementsByClassName('deal_slider-wrap');
         for (let k = 0; k < slidersWrap.length; k++) {
 
@@ -69,9 +79,10 @@ window.addEventListener('load', function () {
             });
             slider.init();
         }
-    }
+    })();
 
-    function investPrograms() {
+    /* index page. invest programs mobile version */
+    (function () {
         const wrap = document.getElementsByClassName('programs')[0];
         if( !wrap ) {
             return;
@@ -83,13 +94,7 @@ window.addEventListener('load', function () {
         });
 
         programs.init();
-    }
+    })();
 
-    const mobMenu = new MobMenu({
-        btn: 'menu-burger',
-        menuContent: 'header_menu'
-    });
-
-    mobMenu.init();
 
  });
