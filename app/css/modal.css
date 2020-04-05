@@ -1,12 +1,12 @@
-.mod.open .modal,
-.mod.open .modal-window {
+.modal.open,
+.modal.open .modal-window {
     opacity: 1;
     z-index: 1000;
 }
-.mod.open .modal-window {
+.modal.open .modal-window {
     transform: translateY(50%);
 }
-.mod.open .modal{
+.modal.open {
     background-color: rgba(0,0,0,.7);
 }
 .modal-window,
@@ -39,15 +39,15 @@
     transform: translateY(-450px);
     transition: all .35s ease-in;
 }
-.mod.modal-hide .modal,
-.mod.modal-hide .modal-window {
+.modal.modal-hide,
+.modal.modal-hide .modal-window {
     opacity: 1;
     z-index: 1000;
 }
-.mod.hide .modal{
+.modal.hide {
     background-color: rgba(0,0,0,0);
 }
-.mod.hide .modal-window {
+.modal.hide .modal-window {
     transform: translateY(-200px);
 }
 .modal_body {

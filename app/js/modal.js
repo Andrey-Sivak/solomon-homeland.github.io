@@ -10,10 +10,9 @@ class Modal {
 
     createModal() {
         this.modal = document.createElement('div');
-        this.modal.classList.add('mod');
-        // this.modal.dataset.close = 'true';
-        this.modal.insertAdjacentHTML('afterBegin', `<div class="modal" data-close="true">
-                <div class="modal-window">
+        this.modal.classList.add('modal');
+        this.modal.dataset.close = 'true';
+        this.modal.insertAdjacentHTML('afterBegin', `<div class="modal-window">
                   <span class="modal_close" id="modal-close" data-close="true">&times;</span>
                   <div class="modal_body">
                     <p class="modal_caption">Чтобы заказать звонок, впишите Ваше имя и телефон:</p>
@@ -37,8 +36,7 @@ class Modal {
                       </div>
                     </form>
                   </div>
-                </div>
-              </div>`);
+                </div>`);
         document.body.appendChild(this.modal);
         return this.modal;
     }
