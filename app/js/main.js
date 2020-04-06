@@ -2,6 +2,7 @@ import { Slider } from "./slider";
 import { MobMenu } from './menu.js';
 import { Programs as InvestPrograms } from './mobile-ivest-programms.js';
 import { Modal } from "./modal";
+import { ToTopButton } from "./to-top-button";
 
 window.addEventListener('load', function () {
 
@@ -16,12 +17,25 @@ window.addEventListener('load', function () {
         mobMenu.init();
     })();
 
+    /* to top button */
+    (function () {
+        const  toTopBtn = new ToTopButton({
+            buttonSelector: '.toTopBtn'
+        });
+
+        toTopBtn.init();
+    })();
+
     /* modal window */
     (function () {
         const modal = new Modal();
-        const buttons = document.getElementsByClassName('button');
-        const buttonsArray = Array.prototype.slice.call( buttons );
-        for( const btn of buttonsArray ) {
+        let buttons = document.getElementsByClassName('button');
+        buttons = Array.prototype.slice.call( buttons );
+        buttons = buttons.filter( (button) => {
+           return !button.classList.contains('toTopBtn');
+        });
+
+        for( const btn of buttons ) {
             btn.addEventListener('click', (e) => {
                 e.preventDefault();
                 modal.init();
