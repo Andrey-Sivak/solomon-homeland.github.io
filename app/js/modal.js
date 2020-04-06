@@ -6,6 +6,7 @@ class Modal {
         this.modal = 0;
         this.ANIMATION_SPEED = 350;
         this.closing = false;
+        this.body = document.body;
     }
 
     createModal() {
@@ -57,6 +58,7 @@ class Modal {
             if( !this.closing ) {
                 this.modal.classList.add('open');
             }
+            this.body.classList.add('body-forbiddence-scroll');
         },10);
 
         this.listeners();
@@ -71,6 +73,8 @@ class Modal {
             this.destroy();
             this.closing = false;
         }, this.ANIMATION_SPEED);
+
+        this.body.classList.remove('body-forbiddence-scroll');
     }
 
     destroy() {

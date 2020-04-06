@@ -1,3 +1,6 @@
+.body-forbiddence-scroll {
+    overflow: hidden;
+}
 .modal.open,
 .modal.open .modal-window {
     opacity: 1;
