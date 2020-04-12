@@ -512,7 +512,6 @@
 .about-us-last-deals-wrap {
     padding: 115px 0;
     background-color: #f8f8f8;
-    display: none;
 }
 .about-us-last-deals_caption {
     color: #1e1e1e;
@@ -550,7 +549,7 @@
     flex-basis: 100%;
 }
 .s-notransition {
-    transition: 0s;
+    transition: 0s!important;
 }
 .deal_slider-arrows {
     margin-top: 20px;
