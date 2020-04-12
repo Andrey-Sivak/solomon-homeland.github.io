@@ -6,8 +6,8 @@ class SliderInvestPlan extends Slider {
 
     constructor(options) {
         super(options);
-        this.itemWidth = this.selectors.slides[1].clientWidth;
-        this.sidesWidth = ( this.selectors.wrap.parentElement.clientWidth - this.itemWidth ) / 2;
+        this.itemWidth = 0;
+        this.sidesWidth = 0;
         this.leftOffset = 0;
         this.offset = 0;
     }
@@ -89,9 +89,17 @@ class SliderInvestPlan extends Slider {
     }
 
     itemPosition() {
+        this.itemWidth = this.selectors.slides[1].clientWidth;
+        this.sidesWidth = ( this.selectors.wrap.parentElement.clientWidth - this.itemWidth ) / 2;
         this.leftOffset = this.itemWidth - this.sidesWidth;
         this.selectors.wrap.style.transform = `translateX(-${this.leftOffset}px)`;
-        return this.leftOffset;
+    }
+
+    build() {
+        super.build();
+        window.addEventListener('resize', (e) => {
+            this.itemPosition();
+        })
     }
 
     init() {

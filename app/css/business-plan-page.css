@@ -10,7 +10,6 @@
     background-size: contain;
     padding-bottom: 123px;
     position: relative;
-    display: none;
 }
 .business-plan-main_bottom-block {
     position: absolute;
@@ -125,6 +124,51 @@
     left: 0;
     bottom: 0;
 }
+
+@media(max-width: 768px){
+    .business-plan_final-item {
+        margin-top: 0;
+    }
+    .business-plan-main {
+        background-image: unset;
+        padding-bottom: 0;
+    }
+    .business-plan-main_bottom-block {
+        display: none;
+    }
+}
+@media(max-width: 700px) {
+    .business-plan_item__content {
+        padding: 35px 15px 30px 15px;
+    }
+    .business-plan_item__caption {
+        padding-left: 45px;
+        font-size: 20px;
+    }
+    .business-plan_item__number {
+        top: 21px;
+        left: 15px;
+        font-size: 60px;
+    }
+    .business-plan_wrap {
+        background-image: unset;
+        padding-bottom: 35px;
+        padding-top: 35px;
+    }
+    .business-plan_item__bg {
+        height: 200px;
+    }
+    .business-plan_caption,
+    .business-plan_final-item__caption,
+    .business-plan-example_caption {
+        font-size: 25px!important;
+    }
+}
+@media(max-width: 520px) {
+    .business-plan .header {
+        margin-bottom: 0;
+    }
+}
 .business-plan-example_caption {
     color: #fff;
     font-weight: bold;
@@ -165,27 +209,27 @@
     transition: all .5s ease-in;
     width: fit-content;
 }
-.business-plan-examples_arrows {
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: flex;
-}
 .business-plan-examples_arrow {
+    position: absolute;
+    z-index: 101;
+    top: calc( 50% + 25px );
+    transform: translateY(-50%);
     width: 14px;
     height: 25px;
-    background-size: contain;
+    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
     display: block;
     cursor: pointer;
+    padding: 25% 30px;
 }
 .business-plan-examples_lt-arrow {
     background-image: url("../img/lt-arr.png");
-    margin-right: 35px;
+    left: 0;
 }
 .business-plan-examples_rt-arrow {
     background-image: url("../img/rt-arr.png");
+    right: 0;
 }
 .business-plan-example_link {
     display: block;
@@ -212,4 +256,28 @@
 }
 .business-plan .callback-buttons {
     color: #fff;
+}
+@media(max-width: 1020px) {
+    .business-plan-examples-wrap:after,
+    .business-plan-examples-wrap:before {
+        width: 20%;
+    }
+}
+@media(max-width: 768px) {
+    .business-plan-example_img {
+        max-width: 350px;
+    }
+}
+@media(max-width: 600px) {
+    .business-plan-example_img {
+        max-width: 200px;
+    }
+    .business-plan-examples_arrow {
+        padding: 10% 15px;
+    }
+}
+@media(max-width: 375px) {
+    .business-plan-example_img {
+        max-width: 150px;
+    }
 }
