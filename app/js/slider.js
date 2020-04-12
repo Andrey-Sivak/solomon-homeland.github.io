@@ -50,7 +50,7 @@ class Slider {
         if( this.position < 0 ) {
             this.selectors.wrap.classList.add('s-notransition');
             this.selectors.wrap.style['transform'] = `translateX(-${this.maxPosition}00%)`;
-            this.position = this.maxPosition;
+            this.position = this.maxPosition - 1;
         }
 
         setTimeout( () => {
