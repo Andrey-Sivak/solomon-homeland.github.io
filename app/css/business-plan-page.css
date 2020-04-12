@@ -10,6 +10,7 @@
     background-size: contain;
     padding-bottom: 123px;
     position: relative;
+    display: none;
 }
 .business-plan-main_bottom-block {
     position: absolute;
@@ -134,23 +135,36 @@
     display: block;
     color: #e6b678;
 }
-.business-plan-examples {
+.business-plan-examples-wrap {
     position: relative;
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 57px;
     padding-top: 50px;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
 }
-/*.business-plan-examples:after {
+.business-plan-examples-wrap:before,
+.business-plan-examples-wrap:after {
     position: absolute;
     content: '';
-    right: 0;
+    width: 25%;
     top: 50px;
     bottom: 0;
-    left: 80%;
-    background-image: linear-gradient(270deg, rgba(0,0,0,1), rgba(0,0,0,0));
-}*/
+    z-index: 100;
+}
+.business-plan-examples-wrap:after {
+    right: 0;
+    background-image: linear-gradient(270deg, #000 15%, rgba(0,0,0,0));
+}
+.business-plan-examples-wrap:before {
+    left: 0;
+    background-image: linear-gradient(90deg, #000 15%, rgba(0,0,0,0));
+}
+.business-plan-examples {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    transition: all .5s ease-in;
+    width: fit-content;
+}
 .business-plan-examples_arrows {
     position: absolute;
     right: 0;
@@ -176,6 +190,8 @@
 .business-plan-example_link {
     display: block;
     position: relative;
+    padding: 0 3vw;
+    box-sizing: border-box;
 }
 .business-plan-example_link:after {
     position: absolute;
@@ -183,15 +199,12 @@
     background-color: rgba(0,0,0,.5);
     top: 0;
     bottom: 0;
-    left: 0;
-    right: 0;
+    left: 3vw;
+    right: 3vw;
     transition: all ease .5s;
 }
 .business-plan-example_link:hover:after {
     background-color: rgba(0,0,0,0);
-}
-.business-plan-example_link:not(:last-child) {
-    margin-right: 28px;
 }
 .business-plan-example_img {
     max-width: 459px;

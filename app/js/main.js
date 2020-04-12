@@ -1,4 +1,5 @@
 import { Slider } from "./slider";
+import { SliderInvestPlan } from "./slider-example-invest-plan";
 import { MobMenu } from './menu.js';
 import { Programs as InvestPrograms } from './mobile-ivest-programms.js';
 import { Modal } from "./modal";
@@ -8,7 +9,6 @@ window.addEventListener('load', function () {
 
     /* mobile menu */
     (function () {
-
         const mobMenu = new MobMenu({
             btn: 'menu-burger',
             menuContent: 'header_menu'
@@ -45,7 +45,6 @@ window.addEventListener('load', function () {
 
     /* gallery page show more info about deal */
     (function () {
-
         const dealsList = document.getElementsByClassName('deal');
         if( !dealsList[0] ) {
             return;
@@ -110,5 +109,21 @@ window.addEventListener('load', function () {
         programs.init();
     })();
 
+    /* business plan page. slider */
+    (function () {
+        const sliderWrap = document.getElementsByClassName('business-plan-examples')[0];
+        if( !sliderWrap ) {
+            return;
+        }
+        const slider = new SliderInvestPlan({
+            wrap: '.business-plan-examples',
+            autoplay: false,
+            dots: false,
+            nextArrow: '.business-plan-examples_rt-arrow',
+            prevArrow: '.business-plan-examples_lt-arrow'
+        });
+
+        slider.init();
+    })();
 
  });

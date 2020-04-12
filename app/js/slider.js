@@ -50,7 +50,7 @@ class Slider {
         if( this.position < 0 ) {
             this.selectors.wrap.classList.add('s-notransition');
             this.selectors.wrap.style['transform'] = `translateX(-${this.maxPosition}00%)`;
-            this.position = this.maxPosition - 1;
+            this.position = this.maxPosition;
         }
 
         setTimeout( () => {
@@ -200,10 +200,12 @@ class Slider {
             this.timer.begin();
         }
 
-        this.selectors.prevArrow.addEventListener('click', () => {
+        this.selectors.prevArrow.addEventListener('click', (e) => {
+            e.preventDefault();
             this.prevSlide();
         });
-        this.selectors.nextArrow.addEventListener('click', () => {
+        this.selectors.nextArrow.addEventListener('click', (e) => {
+            e.preventDefault();
             this.nextSlide();
         });
 
