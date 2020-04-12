@@ -43,10 +43,9 @@ class Modal {
     }
 
     listeners() {
-        const self = this;
         this.modal.addEventListener('click', (e) => {
             if( e.target.dataset.close ) {
-                self.close();
+                this.close();
             }
         });
     }
@@ -79,10 +78,9 @@ class Modal {
 
     destroy() {
         this.modal.parentNode.removeChild(this.modal);
-        const self = this;
         this.modal.removeEventListener('click', (e) => {
             if( e.target.dataset.close ) {
-                self.close();
+                this.close();
             }
         });
     }
