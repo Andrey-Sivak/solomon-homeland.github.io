@@ -17,7 +17,7 @@ class Modal {
                   <span class="modal_close" id="modal-close" data-close="true">&times;</span>
                   <div class="modal_body">
                     <p class="modal_caption">Чтобы заказать звонок, впишите Ваше имя и телефон:</p>
-                    <form action="#" class="modal_form">
+                    <form action="#" class="modal_form" id="modal-form">
                       <div class="modal_input-wrap">
                         <input type="text" id="modal-name" name="name" class="modal_name modal_input" placeholder="Ваше имя:">
                         <label for="modal-name" class="modal_input-label">Ваше имя:</label>
@@ -27,19 +27,39 @@ class Modal {
                         <label for="modal-phone" class="modal_input-label">Телефон:*</label>
                       </div>
                       <div class="modal_submit-wrap">
-                        <a href="#" class="callback-buttons_button button modal_btn">Заказать звонок</a>
+                        <button type="submit" class="callback-buttons_button button modal_btn">Заказать звонок</button>
                         <div class="modal_checkbox-wrap">
                           <label for="modal-checkbox" class="modal_checkbox-label">
+                            <input type="checkbox" name="modal-checkbox" id="modal-checkbox" class="modal_checkbox" checked="checked">
                             <p>Даю согласие на обработку моих персональных данных и согласен(а) с политикой Конфиденциальности*.</p>
-                            <input type="checkbox" name="modal-checkbox" id="modal-checkbox" class="modal_checkbox" >
                           </label>
                         </div>
                       </div>
-                    </form>
+                    </form> 
                   </div>
                 </div>`);
         document.body.appendChild(this.modal);
         return this.modal;
+    }
+
+    sendFormData() {
+        const modalForm = document.getElementById('modal-form');
+        const self = this;
+
+        modalForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const formData = new FormData( this );
+            fetch( '../../form.php', {
+                method: 'post',
+                body: formData
+            }).then( ( response ) => {
+                return response.text();
+            }).catch( (er) => {
+                console.log(er);
+            });
+            self.close();
+        });
     }
 
     listeners() {
@@ -87,6 +107,7 @@ class Modal {
 
     init() {
         this.open();
+        this.sendFormData();
     }
 }
 
