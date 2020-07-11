@@ -57,7 +57,7 @@ function img() {
 	return gulp.src('./app/img/**/**/**/*')
 		.pipe(imagemin([
 	    imagemin.gifsicle({interlaced: true}),
-	    imagemin.jpegtran({progressive: true}),
+	    imagemin.mozjpeg({progressive: true}),
 	    imagemin.optipng({optimizationLevel: 5})
 		]))
 		.pipe(gulp.dest('./dist/img'))

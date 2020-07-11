@@ -11,20 +11,22 @@
   "license": "ISC",
   "dependencies": {
     "core-js": "^3.6.4",
-    "del": "^4.1.0",
-    "gulp": "^4.0.0",
-    "jquery": "^3.4.0"
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "jquery": "^3.4.1",
+    "npm-check-updates": "^4.1.1",
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.3",
-    "@babel/preset-env": "^7.8.3",
-    "babel-loader": "^8.0.5",
-    "browser-sync": "^2.26.3",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-clean-css": "^4.0.0",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "babel-loader": "^8.1.0",
+    "browser-sync": "^2.26.7",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^5.0.3",
-    "webpack": "^4.41.5",
+    "gulp-imagemin": "^7.1.0",
+    "webpack": "^4.42.1",
     "webpack-stream": "^5.2.1"
   }
 }

@@ -110,7 +110,10 @@
     max-width: 215px;
     padding-left: 5%;
 }
-.modal_checkbox-label:before {
+.modal_checkbox-label p {
+    position: relative;
+}
+.modal_checkbox-label p:before {
     content: '';
     position: absolute;
     top: 0;
@@ -132,9 +135,9 @@
     cursor: pointer;
 }
 .modal_checkbox-label span {
-    line-height: 13px;
+    line-height: 13px ;
 }
-.modal_checkbox:checked + .modal_checkbox-label:after {
+.modal_checkbox:checked + p:after {
     content: '';
     position: absolute;
     top: 3px;

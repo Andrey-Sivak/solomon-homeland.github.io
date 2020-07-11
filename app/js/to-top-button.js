@@ -24,7 +24,11 @@ class ToTopButton {
 
     toTop() {
         this.btn.addEventListener('click', (e) => {
-            window.scrollTo(0,0);
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         })
     }
 
