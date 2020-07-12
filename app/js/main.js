@@ -19,6 +19,10 @@ window.addEventListener('load', function () {
 
     /* to top button */
     (function () {
+        const btn = document.getElementsByClassName('toTopBtn')[0];
+        if( !btn ) {
+            return;
+        }
         const  toTopBtn = new ToTopButton({
             buttonSelector: '.toTopBtn'
         });
